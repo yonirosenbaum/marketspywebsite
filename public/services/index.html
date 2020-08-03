@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=H, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MarketSpy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <div style="position: relative;">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <a href="/" class="navbar-brand">MarketSpy</a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a href="../services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="../blog" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--PAGE HEADER-->
+      <header id="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 m-auto text-center">
+              <h1>Our Services</h1>
+              <p>
+                Try our services for a month at no cost.
+                <br>
+                What do you have to lose?
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--SERVICES-->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="offset-2"></div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark text-white">
+                  <h3>Basic Plan</h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">$59.99/Month</h4>
+                  <p class="card-text">
+                    Get value for money with our basic plan.
+                  </p>
+                  <ul class="list-group">
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Advanced Analytics...
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Advanced graphs and data updating in realtime.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Evolving Algorithms...
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Our algorithms adjust to what your customers respond and improve your campaigns in real-time.
+                          Customise these according to conversions, engagement, cost per sale ....
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i> Social Media Marketing..
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Create your own social media marketing campaign with ease.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Market Templating..
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Input the information you need and we tell you where and how to advertise,
+                          with custom templates designed for your specific needs.
+                          Then adjust them as you need.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Copyrighting Engine..
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          We grade your copyrighting according to all the statistics that matter most to business,
+                          so you know how to best improve your business.
+                        </div>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-danger btn-block mt-2 text-white basic-btn"
+                    id="service-btn"
+                    >Get It</a
+                  >
+                </div>
+
+                <div class="card-footer text-muted">Monthly Plan</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark text-white">
+                  <h3>Pro Plan</h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">$129.99/Month</h4>
+                  <p class="card-text">
+                    Get all the basic plan features with these added extras
+                  </p>
+                  <ul class="list-group">
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Growth Hacks Program
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Get our marketing hacks service for free to grow your business faster than you dreamed.
+                        </div>
+                     
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Weekly Marketing Webinars
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Get weekly webinars from some of the best in the industry.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Email Marketing Campaigns
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Have email campaigns launched at the click of a button to churn out those extra sales.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Messenger Bot
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Utilise our lifelike messenger bot on your social media or on your website
+                          and watch your engagement soar.
+                        </div>
+                    </li>
+                    <li class="list-group-item read-more-link">
+                      <i class="fas fa-check"></i>  Get Coaching
+                      <br />
+                      <!--ENTER INITIAL TEXT HERE-->
+                        <div class="read-more-text">
+                          Let one of our experts walk you through how to reach your potential.
+                        </div>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-danger btn-block mt-2 text-white pro-btn"
+                    id="service-btn"
+                    >Get It
+                  </a>
+                </div>
+                <div class="card-footer text-muted">Monthly Plan</div>
+              </div>
+            </div>
+          </div>
+          <div id="error-message"></div>
+        </div>
+      </section>
+
+      <!--FAQ-->
+      <section id="faq" class="p-5 bg-dark text-white">
+        <div class="container">
+          <h1 class="text-center">Frequently Asked Questions</h1>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseOne"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >How to integrate MarketSpy with my business?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse">
+                    <div class="card-body">
+                      Simply login into the application and fill out the fields listed in the dashboard screen.
+                      If you still have any queries, contact our customer assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseTwo"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >Is my information safe?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse">
+                    <div class="card-body">
+                      All your information is multi-encrypted and kept on a secure server.
+                      Every customer is also given a unique identifier number which keeps them anonymous.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseThree"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >How do I change my plan?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse">
+                    <div class="card-body">
+                      That's easy, the 'Plan' option in the 'Pricing' tab allows you to
+                      change your plan.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseFour"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >How do I use MarketSpy?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse">
+                    <div class="card-body">
+                      After the payments section you'll be redirected to a download tab to download
+                      the software. The file will come with a video tutorial and manual.
+                      If you have any more questions call us at your leisure.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseFive"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >Can I negotiate the price?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse">
+                    <div class="card-body">
+                      Sorry our prices are non-negotiable?
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <a
+                        href="#collapseSix"
+                        data-toggle="collapse"
+                        data-parent="accordion"
+                        >When do the payments occur?</a
+                      >
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse">
+                    <div class="card-body">
+                      The payments will start onemonth from when you sign up for MarketSpy.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--MODAL-->
+      <div
+        class="modal position-sticky"
+        tabindex="-1"
+        role="dialog"
+        style="
+          font-size: 1rem !important;
+          font-weight: 200;
+          z-index: 999;
+          position: absolute;
+          display: block;
+          top: 10%;
+        "
+      >
+        <div class="modal-dialog modalContainer" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-white bg-danger">
+              <h5 class="modal-title">Checkout Notice</h5>
+              <button
+                type="button"
+                class="close closeModal"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Once you click the 'Get It' button below please enter the
+                credit-card number on the following checkout page as:
+                <br />
+                <span class="text-danger" style="font-weight: 300;"
+                  >4242 4242 4242 4242</span
+                >
+                to get a succesful response. This is a default Stripe dummy card
+                number.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger closeModal2" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <footer id="main-footer" class="text-center p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>Copyright &copy; <span id="year"></span> MarketSpy</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      //Stripe checkout handling
+      // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
+      var PUBLISHABLE_KEY =
+        "pk_test_51Gyz4BGxwseyMoygrAGtTXAmmF0wZwxvGDbduY1uKYOLqlotd57ppwUbOMViF8tUno7hzmQBv43a1FGlwFEpN8ok00eYwjqNbY";
+      // Replace with the domain you want your users to be redirected back to after payment
+      var DOMAIN = window.location.origin;
+      //window.location.origin;
+      // Replace with a SKU for your own product (created either in the Stripe Dashboard or with the API)
+      var SUBSCRIPTION_BASIC_PRICE_ID = "price_1Gz1VBGxwseyMoyg2N7rTR9N";
+      var SUBSCRIPTION_PRO_PRICE_ID = "price_1Gz1VeGxwseyMoygR1jDKRWh";
+
+      var stripe = Stripe(PUBLISHABLE_KEY);
+
+      // Handle any errors from Checkout
+      var handleResult = function (result) {
+        if (result.error) {
+          var displayError = document.getElementById("error-message");
+          displayError.textContent = result.error.message;
+        }
+      };
+
+      var redirectToCheckout = function (priceId) {
+        // Make the call to Stripe.js to redirect to the checkout page
+        // with the current quantity
+
+        //"../success?session_id={CHECKOUT_SESSION_ID}"
+        //"/success.html?session_id={CHECKOUT_SESSION_ID}"
+        stripe
+          .redirectToCheckout({
+            lineItems: [{ price: priceId, quantity: 1 }],
+            successUrl:
+              DOMAIN + "/success?session_id={CHECKOUT_SESSION_ID}",
+            cancelUrl: DOMAIN + "/canceled",
+            mode: "subscription",
+          })
+          .then(handleResult);
+      };
+
+      document
+        .querySelector(".basic-btn")
+        .addEventListener("click", function (evt) {
+          redirectToCheckout(SUBSCRIPTION_BASIC_PRICE_ID);
+        });
+
+      document
+        .querySelector(".pro-btn")
+        .addEventListener("click", function (evt) {
+          console.log('clicked')
+          redirectToCheckout(SUBSCRIPTION_PRO_PRICE_ID);
+        });
+    </script>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      //Expand feature text
+      $(".read-more-link").mouseenter(function (e) {
+        console.log(e.currentTarget.children[2])
+        e.currentTarget.children[2].style.display = 'block';
+
+        $(e.currentTarget).css('fontWeight', '600')
+        $(e.currentTarget).css({background: 'grey', color: 'white'})
+        $(e.currentTarget.children[2]).css({background: 'grey', color: 'white'})
+
+  })
+  $(".read-more-link").mouseleave(function (e) {
+        console.log(e.currentTarget.children[2])
+        e.currentTarget.children[2].style.display = 'block';
+        $(e.currentTarget).css('fontWeight', '400')
+        $(e.currentTarget).css({background: 'white', color: 'grey'})
+  })
+    /*
+e.currentTarget.style.background = 'grey'
+        e.currentTarget.style.color = 'white'
+        e.currentTarget.children[2].style.color = 'white'   
+
+    */
+      $(".read-more-link").mouseleave(function (e) {
+        console.log(e.currentTarget.children[2])
+        e.currentTarget.children[2].style.display = 'none';
+       
+      });
+      //Close modal
+      document.querySelector('.closeModal').addEventListener('click', function(){
+        //console.log('clicked')
+        document.querySelector('.modalContainer').style.display = 'none';
+      })
+      document.querySelector('.closeModal2').addEventListener('click', function(){
+        //console.log('clicked')
+        document.querySelector('.modalContainer').style.display = 'none';
+      })
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      //Initialise slick slider for testimonials section
+    </script>
+  </body>
+</html>

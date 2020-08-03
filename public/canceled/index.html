@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stripe Checkout Sample</title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+
+  <body>
+    <div class="sr-root">
+      <div class="sr-main">
+          <header class="sr-header" style="display: flex;"> 
+            <div class="sr-header__logo" style="padding-right: 0; margin-right: 0;"></div>
+            <span id="xContainer" style="border-radius: 2px; background: #ed5f74; font-weight: 900; padding: 4px; padding-top: 3px;"><a id="x" style="color: white !important;" href="/" >x</a></span>
+          </header>
+        <div class="sr-payment-summary completed-view">
+          <h1>Your test payment was canceled</h1>
+        </div>
+      <div class="sr-content">
+        <div class="pasha-image-stack">
+          <img
+            src="https://picsum.photos/280/320?random=1"
+            width="140"
+            height="160"
+          />
+          <img
+            src="https://picsum.photos/280/320?random=2"
+            width="140"
+            height="160"
+          />
+          <img
+            src="https://picsum.photos/280/320?random=3"
+            width="140"
+            height="160"
+          />
+          <img
+            src="https://picsum.photos/280/320?random=4"
+            width="140"
+            height="160"
+          />
+        </div>
+      </div>
+      <a href="/" style="color: #ed5f74; font-weight: 700; font-size: 1rem; font-size: 1.2rem;">Click here to return to the main page</a>
+    </div>
+    <script>
+      // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
+      var PUBLISHABLE_KEY = "pk_test_51Gyz4BGxwseyMoygrAGtTXAmmF0wZwxvGDbduY1uKYOLqlotd57ppwUbOMViF8tUno7hzmQBv43a1FGlwFEpN8ok00eYwjqNbY";
+
+      var stripe = Stripe(PUBLISHABLE_KEY);
+      var urlParams = new URLSearchParams(window.location.search);
+
+      if (urlParams.has("session_id")) {
+        document.getElementById("session").textContent = urlParams.get(
+          "session_id"
+        );
+      }
+      document.querySelector('#xContainer').addEventListener('mouseover', function(e){
+          e.currentTarget.style.background = 'white';
+          document.querySelector('#x').style.color = '#ed5f74';
+          document.querySelector('#x').style.fontSize = '1.5rem'
+      })
+      document.querySelector('#xContainer').addEventListener('mouseleave', function(e){
+          e.currentTarget.style.background = '#ed5f74';
+          document.querySelector('#x').style.color = 'white';
+          document.querySelector('#x').style.fontSize = '1rem'
+      })
+    </script>
+  </body>
+</html>

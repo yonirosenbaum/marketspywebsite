@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=H, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MarketSpy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="/" class="navbar-brand">MarketSpy</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="./blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--CAROUSEL-->
+    <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Want More Leads?</h1>
+                <p class="lead">
+                  Our advanced market breakdown tools allow you to see what your
+                  customers want.
+                </p>
+                <a href="./contact" id="carousel-button" class="btn btn-danger btn-lg">Sign Up Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-2">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Perfect Your Campaign</h1>
+                <p class="lead">
+                  Our deep learning algorithms tell you how to adjust your campaign
+                  and what works.
+                </p>
+                <a href="./about" id="carousel-button" class="btn btn-primary btn-lg">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-3">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Reduce Your Expenses</h1>
+                <p class="lead">
+                  We tell you the most efficient way to market your services
+                  with our cost per conversion software.
+                </p>
+                <a href="./services" id="carousel-button" class="btn btn-secondary btn-lg">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!--HOME ICON SECTION-->
+    <section id="home-icons" class="py-5">
+      <div class="container">
+        <div class="row animation-element">
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cog fa-3x mb-2"></i>
+            <h3>Secure</h3>
+            <p>
+              All our data is encrypted and stored securely so you can rest easily.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 text-center ">
+            <i class="fas fa-cloud fa-3x mb-2"></i>
+            <h3>Cloud Data</h3>
+            <p>
+              Access everything your need in real-time.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cart-plus fa-3x mb-2"></i>
+            <h3>The Next Level</h3>
+            <p>
+              Imagine what increasing your conversions will do for you.
+              Let us help you make your dreams a reality.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 text-center"></div>
+          <div class="col-md-4 mb-4 text-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--HOME HEADING SECTION-->
+    <section id="home-heading" class="p-5">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container pt-5 animation-element">
+              <h1>What Do You Need To Thrive?</h1>
+              <p class="d-none d-md-block">
+                We give you the information and advice you need.
+                Your Just One Tool Away From A Better Business.
+              </p>
+              <a class="btn btn-danger" href="./services">Grow Your Business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--INFO SECTION-->
+    <section id="info" class="py-3">
+      <div class="container">
+        <div class="row  animation-element view-in-right-selector">
+          <div class="col-md-6 align-self-center">
+            <h3>Custom Campaigns Made For You In Seconds.</h3>
+            <p>
+              See what makes us so popular.
+            </p>
+            <a href="./about" class="btn btn-outline-danger btn-lg"
+              >Learn More</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img src="img/analysis.jpg" alt="" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--VIDEO PLAY-->
+    <section id="video-play">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container p-5">
+              <a     
+                class="video"
+                data-video="https://www.youtube.com/embed/3gEOP8Th478"
+                data-toggle="modal"
+                data-target="#videoModal"
+              >
+                <i class="fas fa-play fa-3x"></i>
+              </a>
+              <h1 class="video-header animation-elements">See What We Do</h1>
+              <p class="text-muted">This links to a TED talk</p class="text-muted">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Stopped animations here-->
+    <!--PHOTO GALLERY-->
+    <section id="gallery" class="py-5 bg-secondary text-white">
+      <div class="container">
+        <h1 class="text-center">Expand What's Possible</h1>
+        <p class="text-center">Growing your business is easier than you think</p>
+        <div class="row mb-4">
+          <div class="col-md-5 animation-element animation-fade-element">
+            <a
+              href="./img/graph.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+            >
+              <img
+                src="./img/graph.jpg"
+                alt=""
+                class="img-fluid rounded"
+              />
+            </a>
+          </div>
+          <div class="offset-1"></div>         
+          <div class="col-md-5 animation-element animation-fade-element">
+            <a
+              href="./img/app.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="562"
+              data-width="562"
+            >
+              <img
+                src="./img/app.jpg"
+                alt=""
+                class="img-fluid rounded"
+              />
+            </a>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!--NEWSLETTER-->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white animation-element index-form-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="">Sign Up For Our Newsletter</h1>
+            <p>
+              Get free suggestions on how to tweak your marketing and maximise
+              your profits.
+            </p>
+            <form action="/signup" method="POST" class="form-inline justify-content-center" id="sign-up">
+              <input
+                type="text"
+                placeholder="Enter Name"
+                name="username"
+                class="form-control mb-2 mr-2"
+                id="index-name"
+              />
+              <input
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                class="form-control mb-2 mr-2"
+                id="index-email"
+              />
+              <div class="imdex-button-outer-container" style="position: relative;">
+              <div class="index-button-container" style="z-index: 999; position:absolute; left:0; right:0; top:0; bottom:0;"></div>
+              <input disabled id="index-form-submit-button" type="submit" class="btn btn-primary mb-2"></input>
+              </div>
+            </form>
+            <div style="display: none; margin: 0 auto; border: 1px solid red; color: red; margin-top: 8px; max-width: 300px; padding: 2px; font-weight: 600; border-radius: 5px;" id="invalid-form-input">Please enter a valid name and email</div>
+            <div style="display: none; margin: 0 auto; border: 1px solid green; color: green; margin-top: 8px; max-width: 300px; padding: 2px; font-weight: 600; border-radius: 5px;" id="form-success">You have succesfully signed up for our newsletter!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="main-footer" class="text-center p-4" method="post" action="/userSubmission">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> MarketSpy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--VIDEO MODAL-->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+      //enable submit button if form has input text
+      document.querySelector('#index-name').addEventListener('change', function(e){
+        console.log('disabled =', document.querySelector('#index-form-submit-button').disabled)
+       if(document.querySelector('#index-name').value !== '' && document.querySelector('#index-email').value !== ""){
+        document.querySelector('#index-form-submit-button').disabled = false;
+       }
+       else if(document.querySelector('#index-name').value == '' || document.querySelector('#index-email') == ''){
+        document.querySelector('#index-form-submit-button').disabled = true;
+       }
+       document.querySelector('#invalid-form-input').style.display = 'none'
+     })
+     
+     document.querySelector('#index-email').addEventListener('change', function(e){
+       if(document.querySelector('#index-name').value !== "" && document.querySelector('#index-email').value !== ""){
+        document.querySelector('#index-form-submit-button').disabled = false;
+       }
+       else if(document.querySelector('#index-name').value == '' || document.querySelector('#index-email').value == ''){
+        document.querySelector('#index-form-submit-button').disabled = true;
+       }
+       document.querySelector('#invalid-form-input').style.display = 'none'
+     })
+     //Have warning message that you need to display a name and email
+     document.querySelector('.index-button-container').addEventListener('click', function(e){
+      console.log('disbaled now')
+      if (document.querySelector('#index-form-submit-button').disabled == false){
+        console.log('disabled false')
+      }
+      if (document.querySelector('#index-form-submit-button').disabled == true){
+        window.setTimeout(function(){
+         document.querySelector('#invalid-form-input').style.display = 'block'}, 300)
+       }
+     })
+     document.querySelector('.index-button-container').addEventListener('click', function(e){
+          if(document.querySelector("#index-form-submit-button").disabled == false){
+            document.querySelector('#form-success').style.display = 'block';
+            setTimeout(function(){
+              document.querySelector('#form-success').style.display = 'none';
+            },3000)
+          }
+        })
+    </script>
+    <script>
+    
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      // Configure Slider
+      $(".carousel").carousel({
+        interval: 3000,
+        pause: "hover",
+      });
+      //Carousel button shake effect
+      $('[id="carousel-button"]').hover(function(e) {
+        let newColor = $(this).css("backgroundColor");
+        let newBackground = $(this).css("color");
+  $( this ).animate({color: newColor, backgroundColor: newBackground
+  }, 'fast');
+});
+
+      // Lightbox Init
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+      // Video Play
+      $(function () {
+        // Auto play modal video
+        $(".video").click(function (e) {
+          var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto =
+              videoSRC +
+              "?v=3gEOP8Th478";
+          $(theModal + " iframe").attr("src", videoSRCauto);
+          $(theModal + " button.close").click(function () {
+            $(theModal + " iframe").attr("src", videoSRC);
+          });
+        });
+      });
+      
+      //Scroll animations
+      var $animation_elements = $('.animation-element');
+      var $window = $(window);
+      function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+ 
+        $.each($animation_elements, function() {
+          var $element = $(this);
+          var element_height = $element.outerHeight();
+          var element_top_position = $element.offset().top;
+          var element_bottom_position = (element_top_position + element_height);
+ 
+          //check to see if this current container is within viewport
+          if($element.hasClass('index-form-header') && element_bottom_position >= window_top_position &&
+          element_top_position <= window_bottom_position){
+            $element.addClass('index-form-slide')
+          }
+          else if($element.hasClass('video-header')){
+            $element.addClass('video-header-slide')
+          }
+          else if ($element.hasClass('view-in-right-selector') && element_bottom_position >= window_top_position &&
+          element_top_position <= window_bottom_position){
+            $element.addClass('in-view-right')
+          }
+          else if ($element.hasClass('animation-fade-element') && element_bottom_position >= window_top_position &&
+          element_top_position <= window_bottom_position){
+            $element.addClass('image-slider')          
+          }
+          else if (
+          (element_top_position <= window_bottom_position)) {
+            $element.addClass('in-view');
+          } 
+        });
+      }
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+    </script>
+  </body>
+</html>

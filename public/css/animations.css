@@ -1,0 +1,64 @@
+.in-view {
+  animation-name: slideLeft;
+  animation-duration: 500ms;
+}
+@keyframes slideLeft {
+  0% {
+    margin-left: 2000px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.in-view-right {
+  animation-name: slideRight;
+  animation-duration: 500ms;
+}
+@keyframes slideRight {
+  0% {
+    margin-right: 2000px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image-slider {
+    animation-name: imageSliderEffectSmall;
+    animation-duration: 300ms;
+  }
+  @keyframes imageSliderEffectSmall {
+    0% {
+      margin-left: 2000px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+}
+.index-form-slide {
+  animation-name: indexFormSlide;
+  animation-duration: 300ms;
+}
+@keyframes indexFormSlide {
+  0% {
+    margin-right: 2000px;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+.video-header-slide {
+  animation-name: videoHeaderSlide;
+  animation-duration: 300ms;
+}
+@keyframes videoHeaderSlider {
+  0% {
+    margin-left: 2000px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
