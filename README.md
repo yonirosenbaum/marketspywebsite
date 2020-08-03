@@ -1,1 +1,1 @@
-Link: http://calm-lake-37640.herokuapp.com/
+Link: http://marketspy.herokuapp.com/
